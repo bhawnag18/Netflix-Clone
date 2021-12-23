@@ -1,0 +1,179 @@
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+
+}
+
+.headercontainer{
+    background:url("https://images.unsplash.com/12/gladiator.jpg");
+    background-repeat: no-repeat;
+    padding:3px;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    background-size: cover;
+    background-position: 30% 0%;
+    
+}
+
+.headercontainer ul{
+    margin:0;
+}
+.headercontainer li{
+    list-style-type: none;
+    float:left;
+    padding:6px;
+}
+.navbar-brand{
+    width:30px;
+    height:30px;
+}
+.navbar-brand img{
+    width:100%;
+}
+.hero-content{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:83px;
+    margin-bottom: 98px;
+    
+}
+.hero-content .btnContainer button{
+    padding:5px 6px;
+    font-size: 15px;
+    width: 120px; 
+    border:none;
+    color:white;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+.hero-content .btnContainer button:first-of-type{
+    background-color: #E62D35;
+}
+.hero-content .btnContainer button:last-of-type{
+    background-color: #3F3F49;
+}
+
+.main_content{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+.filter_content{
+    width:20%;
+    float:left;
+    font-family: 'Raleway', sans-serif;
+    border:1px solid #ddd;
+  
+}
+.filter_content:hover{
+    box-shadow:0 0 15px 5px rgba(39,43,55,0.15);
+}
+.filter_list{
+    margin:0;
+    padding:0;
+    
+    text-align: center;
+}
+.filter_list li{
+    list-style:none;
+    padding:10px;
+}
+.video_container{
+   width:72%;
+   float:right;
+}
+.filter_content h2{
+text-align: center;
+}
+.filter_list li.active{
+    color:#E62D35;
+}
+
+
+.video_search input{
+    width:91%;
+    padding:7px;
+    border:1px solid #ddd;
+}
+.video_list_item{
+    width:45%;
+    float:left;
+    margin-right:2%;
+    margin-top:5px;
+    margin-bottom: 5px;
+    border:1px solid #ddd;
+    border-radius:3px;
+}
+.video_list_item:hover{
+    box-shadow:0 0 15px 5px rgba(39,43,55,0.15);
+}
+.video_list_item h2{
+    color:#847f7f;
+}
+.video_item_desc{
+    color:#111;
+    padding:5px;
+}
+.thumbnailcontainer{
+   width:100%;
+}
+.video_wrapper{
+    padding:10px;
+}
+.video_container .videobtncontainer button:first-of-type{
+    background-color: #E62D35;
+}
+.video_container .videobtncontainer button:last-of-type{
+    background-color: #3F3F49;
+}
+.video_container .videobtncontainer button{
+    padding:5px 6px;
+    font-size: 15px;
+    width: 100px; 
+    border:none;
+    color:white;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:1027px)
+{
+    .filter_content{
+        display:none;
+    }
+    .video_container{
+        width:100%;
+        float:none;
+    }
+    .buttonContainer{
+        width:50%;
+    }
+    .thumbnailcontainer img{
+        width:100%;
+     }
+}
+@media screen and (max-width:560px)
+{
+   .headercontainer li{
+       float:none;
+       text-align: center;
+   }
+   .navbar-brand{
+       width:70px;
+       height:70px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .video_search input{
+       width:100%;
+   }
+   .video_list_item{
+       width:100%;
+   }
+   .thumbnailcontainer img{
+    width:100%;
+ }
+}
